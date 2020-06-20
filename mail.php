@@ -1,31 +1,48 @@
 <?php
-    $to = 'demo@spondonit.com';
-    $firstname = $_POST["fname"];
-    $email= $_POST["email"];
-    $text= $_POST["message"];
-    $phone= $_POST["phone"];
-    
 
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $headers = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
-    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
-    $message ='<table style="width:100%">
-        <tr>
-            <td>'.$firstname.'  '.$laststname.'</td>
-        </tr>
-        <tr><td>Email: '.$email.'</td></tr>
-        <tr><td>phone: '.$phone.'</td></tr>
-        <tr><td>Text: '.$text.'</td></tr>
+        # FIX: Replace this email with recipient email
+        $mail_to = "PUT YOUR EMAIL ADDRESS";
         
-    </table>';
+        # Sender Data
+        $subject = trim($_POST["subject"]);
+        $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["name"])));
+        $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+        $message = trim($_POST["message"]);
+        
+        if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)  OR empty($message)) {
+            # Set a 400 (bad request) response code and exit.
+            http_response_code(400);
+            echo "Please complete the form and try again.";
+            exit;
+        }
+        
+        # Mail Content
+        $content = "Name: $name\n";
+        $content .= "Email: $email\n\n";
+        $content .= "Message:\n$message\n";
 
-    if (@mail($to, $email, $message, $headers))
-    {
-        echo 'The message has been sent.';
-    }else{
-        echo 'failed';
+        # email headers.
+        $headers = "From: $name <$email>";
+
+        # Send the email.
+        $success = mail($mail_to, $subject, $content, $headers);
+
+        if ($success) {
+            # Set a 200 (okay) response code.
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
+            # Set a 500 (internal server error) response code.
+            http_response_code(500);
+            echo "Oops! Something went wrong, we couldn't send your message.";
+        }
+
+    } else {
+        # Not a POST request, set a 403 (forbidden) response code.
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
     }
 
 ?>
