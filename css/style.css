@@ -2,7 +2,7 @@
 Author       : Dreambuzz
 Template Name: Treaser - Book landing template
 Author URI : https://themeturn.com/
-Description: Treaser,book,author,it, onepage,clean,bootstrap4, 
+Description: Treaser,book,author,it, onepage,clean,bootstrap4,
 Version      : 1.0
 -------------------------------------------------*/
 
@@ -870,3 +870,10 @@ CONTACT PAGE
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+.current-year a:link, a:visited {
+ color: #f44336;
+}
+.current-year a:hover {
+  text-decoration: underline;
+}
