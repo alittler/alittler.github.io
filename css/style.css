@@ -452,7 +452,7 @@ h1 {
 }
 
 .main-banner p {
-  padding-right: 100px;
+  /* padding-right: 100px; */
 }
 
 .cta-2 {
@@ -887,4 +887,8 @@ CONTACT PAGE
 
 .section-heading {
   margin-bottom: 0px;
+}
+
+.book-preview {
+  text-align: center;
 }
