@@ -877,3 +877,14 @@ CONTACT PAGE
 .current-year a:hover {
   text-decoration: underline;
 }
+
+*,
+::after,
+::before {
+ box-sizing:border-box;
+ padding: ;
+}
+
+.section-heading {
+  margin-bottom: 0px;
+}
