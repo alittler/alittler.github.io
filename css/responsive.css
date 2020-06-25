@@ -6,7 +6,7 @@
       width: 40%;
     }
   } */
-  
+
 @media (min-width: 768px) and (max-width: 992px){
     .section {
         padding: 7.5rem 0;
@@ -17,7 +17,7 @@
     .featured-client img {
         margin: 20px 0px;
     }
-    
+
     .owl-reviews .owl-controls {
         position: relative;
         text-align: center;
@@ -64,7 +64,7 @@
     .featured-client img {
       margin: 20px 0px;
     }
-    
+
     /* home 3 */
 
     .banner-main-3 .banner-img{
@@ -100,16 +100,16 @@
     }
     .header-socials ul{
         display: inline-block;
-        padding-left: 0px;  
+        padding-left: 0px;
         margin-top:15px;
     }
 
-   
-   
-  }
-  
 
-/* 
+
+  }
+
+
+/*
   @media (max-width: 480px) {
     .fixed-top.site-header {
       background: #fff;
@@ -135,7 +135,7 @@
   } */
 
 
-  
+
 @media (max-width: 480px){
     .fixed-top.site-header {
         background: #fff;
@@ -145,7 +145,6 @@
       line-height: 55px;
     }
     .main-banner p {
-      padding-right: 0px;
     }
     .owl-book .item img {
         width: 92%;
@@ -160,16 +159,15 @@
     }
 
   }
-  
 
-  
+
+
   @media (max-width: 400px) {
     h1 {
         font-size: 36px;
         line-height: 46px;
     }
     .main-banner p {
-        padding-right: 0px;
     }
     .owl-book .item img {
         width: 69%;
@@ -197,7 +195,6 @@
     .banner-main-3 .btn{
         margin-top:10px;
     }
-   
-      
-  }
 
+
+  }
