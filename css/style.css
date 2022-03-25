@@ -625,8 +625,9 @@ h1 {
 }
 
 .book-item .hover-item i {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 30px;
+  height: 45px;
   background: #fff;
   color: #222;
   text-align: center;
@@ -634,6 +635,55 @@ h1 {
   border-radius: 100%;
   padding-top: 20px;
   transition: all .35s ease;
+    
+    font-weight: 700;
+position: relative;
+text-transform: uppercase;
+padding: 15px 40px;
+border-radius: 35px;
+font-size: 14px;
+font-family: "Open Sans", sans-serif;
+cursor: pointer;
+border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+transition: all 0.2s ease-in-out;
+-webkit-transform: translateY(0px);
+transform: translateY(0px);
+transition: all 0.3s ease-in-out !important;
+}
+
+.book-item-soon .hover-item-soon i {
+  width: 200px;
+  height: 30px;
+  height: 45px;
+  background: #fff;
+  color: #222;
+  text-align: center;
+  display: inline-block;
+  border-radius: 100%;
+  padding-top: 20px;
+  transition: all .35s ease;
+    
+    font-weight: 700;
+position: relative;
+text-transform: uppercase;
+padding: 15px 40px;
+border-radius: 35px;
+font-size: 14px;
+font-family: "Open Sans", sans-serif;
+cursor: pointer;
+border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+transition: all 0.2s ease-in-out;
+-webkit-transform: translateY(0px);
+transform: translateY(0px);
+transition: all 0.3s ease-in-out !important;
 }
 
 .book-item .hover-item i:hover {
@@ -718,6 +768,7 @@ h1 {
   text-align: center;
   box-shadow: 12px 7px 90px 0 rgba(110, 123, 131, 0.1);
   background: #fff;
+    font-size: 60px;
 }
 
 .feature-block i {
