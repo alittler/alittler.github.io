@@ -1172,3 +1172,16 @@ CONTACT PAGE
 .dark-home .top-socials a{
   border-color: rgba(255,255,255,.1);
 }
+
+.section {
+    padding-top: 5em;
+    padding-right: 0px;
+    padding-bottom: 7.5em;
+    padding-left: 0px;
+}
+h4 {
+    color: #6A7C92;
+}
+.section a {
+    color: white;
+}
