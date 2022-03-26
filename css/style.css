@@ -607,6 +607,7 @@
 }
  .testimonial2 .author .author-info {
      margin-top: 20px;
+     margin-bottom: 200px;
 }
  .testimonial2 .author h4 {
      font-size: 18px;
@@ -878,7 +879,7 @@
  .section {
      padding-top: 5em;
      padding-right: 0px;
-     padding-bottom: 7.5em;
+     padding-bottom: 5em;
      padding-left: 0px;
 }
  h4 {
