@@ -899,3 +899,25 @@
  .credit a:hover {
      color: red;
 }
+.button {
+background-color: #D04540;  
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+    font-weight: 700;
+     position: relative;
+     text-transform: uppercase;
+     padding: 15px 40px;
+     border-radius: 35px;
+     font-size: 14px;
+     font-family: "Open Sans", sans-serif;
+     cursor: pointer;
+     border: 1px solid transparent;
+     transition: all 0.2s ease-in-out;
+     -webkit-transform: translateY(0px);
+     transform: translateY(0px);
+     transition: all 0.3s ease-in-out !important;
+}
